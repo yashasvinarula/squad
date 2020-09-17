@@ -68,7 +68,7 @@ export default class PriceDetail extends Component {
                             <span className = 'bold' style = {{fontSize: '20px'}}>${finalprice}</span>
                         </div>
                     </div>
-                    <div className = 'box-post red' onClick = {this.props.openForm}>
+                    <div className = {active?'box-post red darken-2': 'box-post red'} onClick = {this.props.openForm}>
                             Start Your Trial
                     </div>
                 </div>
