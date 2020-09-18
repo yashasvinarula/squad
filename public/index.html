@@ -26,6 +26,15 @@
     -->
     <title>React App</title>
     <link rel = 'stylesheet' href = 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src = 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
+    <script>
+      $(document).ready(function(){
+        $('.tabs').tabs();
+        $('.modal').modal();
+        $('select').formSelect();
+      });
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -41,14 +50,4 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src = 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
-  <script>
-    $(document).ready(function(){
-      // M.AutoInit();
-      $('.tabs').tabs();
-      $('.modal').modal();
-      $('select').formSelect();
-    });
-  </script>
 </html>

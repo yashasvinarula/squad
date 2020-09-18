@@ -51,6 +51,7 @@ export default class Prices extends Component {
 
     render() {
         var {category, prices, active, modal} = this.state;
+        const leads = active.split(' ')[1];
         return (
             <div className = 'row'>
                 <ModalForm 
@@ -58,6 +59,7 @@ export default class Prices extends Component {
                     closeForm = {this.closeForm}
                     open = {modal}
                     plan = {active}
+                    numberofleads = {leads}
                 />
                 {
                     prices.map(data => 
